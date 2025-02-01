@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Donmyn's Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="My homepage">
+<link rel="icon" type="image/png" href="images\iconsmall.png">
+<link rel="stylesheet" href="css/style.css">
+<script async src="https://sleepie.uk/oneko.js"></script>
+</head>
+<body>
+
+<header>
+
+<h1 id="logo"><img src="images/icon.png" alt="Artist Web Site"><span>Donmyn</span></h1>
+
+<!-- Menu Block -->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#section2">Profile</a></li>
+<li><a href="#section3">Activity Report</a></li>
+<li><a href="#section4">Gallery</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href="https://x.com/aomyn175"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="https://www.youtube.com/@don_myn"><i class="fab fa-youtube"></i></a></li>
+<li><a href="https://discordapp.com/users/358246086491635725"><i class="fab fa-discord"></i></a></li>
+</ul>
+
+<ul class="nekoweb">
+<li><a href="https://donmyn.nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button11.gif"></a><!-- button by milkyway.moe --></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+</header>
+
+<main>
+
+
+
+<!-- Section 1 -->
+<section id="section1" class="section">
+</section>
+
+
+
+<!-- Section 2 -->
+<section id="section2" class="section">
+
+<h2>Profile</h2>
+<h3>Welcome to my Homepage</h3>
+
+<p>Hey there! I’m Donmyn (or Myn), and this is where I share all the things I love to do. Whether it’s playing games, drawing, working on cool projects, or just exploring new ideas, I’m always up to something fun.
+Feel free to check out my work, see what I’m currently into, and maybe even get inspired along the way. Let’s create, play, and explore together!</p>
+
+<h3>Why there is a cat?</h3>
+<p>Why not.</p>
+
+</section>
+
+
+
+<!-- Section 3 -->
+<section id="section3" class="section">
+
+<h2>Activity Report</h2>
+
+<dl class="new">
+
+<dt>1/2/2025<span>News</span></dt>
+<dd>Yay! my homepage now finish</dd>
+
+</dl>
+</section>
+
+
+
+<!-- ここからsection4 -->
+<section id="section4" class="section">
+
+<h2>Gallery</h2>
+<!--<p>This is the content of section 4.</p>
+
+<p>The thumbnail images here are cropped into squares even if they are rectangular.<br>
+Be aware that images will not be displayed unless a link (a tag) is specified.<br>
+If you want to display only thumbnails without using links, replace the a tag with a div tag (&lt;div&gt;〜&lt;/div&gt;) and modify the style.css file by changing<br>
+.list-grid-trimming .list a to .list-grid-trimming .list div.</p>
+<p>Currently, there are four columns, but you can easily change them to five or three columns. For details, please refer to the explanation inside the block<br>
+.list-grid-trimming <br>
+in the style.css file located in the css folder.</p>-->
+
+
+<div class="list-grid-trimming">
+
+<div class="list">
+<a href="images/icons2.png" data-lightbox="group1" data-title="cat">
+<img src="images/icons2.png" alt="">
+</a>
+</div>
+
+</div>
+<!--/.list-grid-->
+<!--
+<h3>Using lightbox</h3>
+<p>When you click on the thumbnail image, the screen will darken and a popup will open.<br>
+Since this program is distributed overseas, we do not support customization on this site. Please try searching on Google or similar yourself.</p>
+<h3>If you want to add more images</h3>
+<p>Basically, try copying and pasting the parts from the html side of your template to increase the number of images.<br>
+Images that are displayed larger in the popup are loaded within the a tag, while thumbnail images (small images) are loaded with the img tag.<br>
+In this template, both images use the same image, but you can place different images for each if you like.</p>
+<p class="look">&lt;a href=&quot;<span class="color-check">images_gallery/1.jpg</span>&quot; data-lightbox=&quot;group1&quot; data-title=&quot;Enter title here&quot;&gt;<br>
+&lt;img src=&quot;<span class="color-check">images_gallery/1.jpg</span>&quot; alt=&quot;&quot;&gt;<br>
+&lt;/a&gt;</p>
+<h3>Group</h3>
+<p><span class="look">data-lightbox="group1"</span><br>
+This is the setting for a group that connects to the next image when displayed in a popup.<br>
+You can change the "group1" part as you like.<br>
+If the same group name is used, an arrow linking to the next image will appear. If you want to view them by group, it is advisable to change this group name.</p>
+<p class="look">&lt;a href=&quot;images_gallery/1.jpg&quot; <span class="color-check">data-lightbox=&quot;group1&quot;</span> data-title=&quot;Enter title here&quot;&gt;<br>
+&lt;img src=&quot;images_gallery/1.jpg&quot; alt=&quot;&quot;&gt;<br>
+&lt;/a&gt;</p>
+<h3>Comments during Popup</h3>
+<p><span class="look">data-title="Enter title here"</span><br>
+This is the text displayed below the photo when shown in lightbox with a darkened background.<br>
+If you are unsure, please try setting it up and check the operation. If unnecessary, you can delete the tag altogether.</p>
+<p class="look">&lt;a href=&quot;images_gallery/1.jpg&quot; data-lightbox=&quot;group1&quot; <span class="color-check">data-title=&quot;Enter title here&quot;</span>&gt;<br>
+&lt;img src=&quot;images_gallery/1.jpg&quot; alt=&quot;&quot;&gt;<br>
+&lt;/a&gt;</p>
+
+<h3>Tags and files necessary to use lightbox.</h3>
+<p>The block for loading "lightbox.css" at the beginning of style.css in the css folder.<br>
+The block for loading the "lightbox js file" at the bottom of the html.</p>
+<p>If several years have passed, there may be issues with functionality.<br>
+If it suddenly starts behaving strangely without editing the template, please check if changing the version above resolves the issue.</p>
+-->
+
+</section>
+
+<section id="section5" class="section">
+<h2>Join my discord server</h2>
+<div class="widget-container">
+    <iframe src="https://discord.com/widget?id=1311716670783492157&theme=dark" width="50" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
+    
+</section>
+
+</main>
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Donmyn</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--Back to top button-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--Open/Close Button (Hamburger Icon)-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--Loading jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--Loading JS file for lightbox-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--This script is for this template only-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
